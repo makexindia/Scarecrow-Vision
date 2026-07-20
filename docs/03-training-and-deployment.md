@@ -1,6 +1,6 @@
 # Phase 3: Training & Deployment
 
-## ☁️ Step 3: Edge Impulse Studio & Data Collection
+## ☁️ Step 5: Edge Impulse Studio & Data Collection
 
 1. Go to **studio.edgeimpulse.com** and create a new project called `Scarecrow-Vision`.
 2. Navigate to **Dashboard > Keys** and copy your API Key.
@@ -29,7 +29,7 @@ Instead of hunting for animals, use the **Phone Monitor Trick**:
 
 ---
 
-## 🏋️ Step 4: Training the FOMO Model
+## 🏋️ Step 6: Training the FOMO Model
 
 In Edge Impulse, create an Impulse with an **Image** processing block and an **Object Detection** learning block.
 
@@ -38,7 +38,20 @@ In Edge Impulse, create an Impulse with an **Image** processing block and an **O
 
 ---
 
-## 🏃 Step 6: Running the Inference Pipeline
+## 🚀 Step 7: Deployment & Model Download
+
+We must download the model as an `.eim` (Edge Impulse Model) executable file.
+
+1. Navigate to your project directory and run the downloader on the Pi:
+```bash
+cd ~/scarecrow-vision
+edge-impulse-linux-runner --download modelfile.eim
+chmod +x modelfile.eim
+```
+
+---
+
+## 🏃 Step 8: Running the Inference Pipeline
 
 Ensure the `MODEL_FILE` variable in your code explicitly points to the local directory (`./modelfile.eim`) so Linux can find it.
 
