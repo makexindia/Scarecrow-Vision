@@ -1,0 +1,4 @@
+# Note: OpenCV must be installed via system apt (sudo apt install python3-opencv)
+edge_impulse_linux
+pyaudio
+flask

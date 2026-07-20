@@ -1,0 +1,4 @@
+scarecrow_env/
+*.eim
+__pycache__/
+.env
